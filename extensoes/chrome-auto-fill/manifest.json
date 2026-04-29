@@ -1,1 +1,17 @@
 
+{
+  "manifest_version": 3,
+  "name": "MCMV Auto Fill",
+  "version": "1.0",
+  "description": "Preenche automaticamente dados de clientes no atendimento MCMV",
+  "permissions": ["scripting", "activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["script.js"]
+    }
+  ]
+}
